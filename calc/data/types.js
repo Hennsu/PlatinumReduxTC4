@@ -181,7 +181,7 @@ var RBY = {
     Flying: {
         '???': 1,
         Normal: 1,
-        Grass: 2,
+        Grass: 1,
         Fire: 1,
         Water: 1,
         Electric: 0.5,
@@ -211,7 +211,7 @@ var RBY = {
         Rock: 1,
         Fighting: 0.5,
         Psychic: 2,
-        Ghost: 0.5,
+        Ghost: 1,
         Dragon: 1
     },
     Poison: {
@@ -230,7 +230,7 @@ var RBY = {
         Fighting: 1,
         Psychic: 1,
         Ghost: 0.5,
-        Dragon: 1
+        Dragon: 2
     },
     Ground: {
         '???': 1,
@@ -244,7 +244,7 @@ var RBY = {
         Bug: 0.5,
         Poison: 2,
         Ground: 1,
-        Rock: 2,
+        Rock: 1,
         Fighting: 1,
         Psychic: 1,
         Ghost: 1,
@@ -301,7 +301,7 @@ var RBY = {
         Rock: 1,
         Fighting: 2,
         Psychic: 0.5,
-        Ghost: 1,
+        Ghost: 2,
         Dragon: 1
     },
     Ghost: {
@@ -317,19 +317,19 @@ var RBY = {
         Poison: 1,
         Ground: 1,
         Rock: 1,
-        Fighting: 1,
+        Fighting: 2,
         Psychic: 0,
-        Ghost: 2,
+        Ghost: 1,
         Dragon: 1
     },
     Dragon: {
         '???': 1,
-        Normal: 1,
+        Normal: 2,
         Grass: 1,
         Fire: 1,
         Water: 1,
         Electric: 1,
-        Ice: 1,
+        Ice: 0.5,
         Flying: 1,
         Bug: 1,
         Poison: 1,
@@ -343,8 +343,8 @@ var RBY = {
 };
 var GSC = (0, util_1.extend)(true, {}, RBY, {
     '???': { Dark: 1, Steel: 1 },
-    Normal: { Dark: 1, Steel: 0.5 },
-    Grass: { Dark: 1, Steel: 0.5 },
+    Normal: { Dark: 2, Steel: 0.5 },
+    Grass: { Dark: 1, Steel: 1 },
     Fire: { Dark: 1, Steel: 2 },
     Water: { Dark: 1, Steel: 1 },
     Electric: { Dark: 1, Steel: 1 },
@@ -355,12 +355,12 @@ var GSC = (0, util_1.extend)(true, {}, RBY, {
     Ground: { Dark: 1, Steel: 2 },
     Rock: { Dark: 1, Steel: 0.5 },
     Fighting: { Dark: 2, Steel: 2 },
-    Psychic: { Dark: 0, Steel: 0.5 },
-    Ghost: { Psychic: 2, Dark: 0.5, Steel: 0.5 },
+    Psychic: { Dark: 0, Steel: 1 },
+    Ghost: { Psychic: 2, Dark: 0.5, Steel: 1 },
     Dragon: { Dark: 1, Steel: 0.5 },
     Dark: {
         '???': 1,
-        Normal: 1,
+        Normal: 0.5,
         Grass: 1,
         Fire: 1,
         Water: 1,
@@ -376,7 +376,7 @@ var GSC = (0, util_1.extend)(true, {}, RBY, {
         Ghost: 2,
         Dragon: 1,
         Dark: 0.5,
-        Steel: 0.5
+        Steel: 1
     },
     Steel: {
         '???': 1,
